@@ -1,0 +1,1 @@
+New-PSUScript -Name "RunPesterTests.ps1" -Path "RunPesterTests.ps1" -InformationAction "Continue"

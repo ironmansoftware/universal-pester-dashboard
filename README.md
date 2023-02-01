@@ -1,13 +1,19 @@
-![](./ims-logo.png)
+# Pester Dashboard
 
-# PowerShell Universal Template
+## Test Dashboard 
 
-This repository is used for creating PowerShell Universal Templates. You can create a new repository based on this one to publish your own templates.
+![](./dashboard.png)
 
-## Creating a Template
+## Test Run
 
-First, create a new repository based on this template. Clone the repository locally and add your files to it. Add your files from `C:\ProgramData\UniversalAutomation\Repository` to the repository. Update the manifest and with the name, description and version of your template. Push the changes to GitHub. Once you're satisfied with the template, you can publish to our website.
+![](./job-run.png)
 
-## Publishing a Template
+This dashboard is capable of locating and running Pester containers. It will automatically load `*.Test.ps1` files from the repository directory.
 
-Login to [Ironman Software](https://ironmansoftware.com/account) and generate a template token. In GitHub, navigate to Settings \ Secrets and Variables and click Actions. Create a new secret named `TOKEN` with the value of your token. Run the Publish GitHub action.
+This template includes:
+
+- Script to run Pester tests by file name
+- Chart displaying failed\passed tests
+- Table to view previous test runs
+- Table to execute Pester tests
+- Details page for test results
